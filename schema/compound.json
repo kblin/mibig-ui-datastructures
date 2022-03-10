@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema_created": "2022-03-07T11:45:13+01:00",
+    "$schema_version": "1.0",
+    "$id": "https://mibig.secondarymetabolites.org/schemas/compound.json",
+    "title": "Compound",
+    "description": "All we need to know about a MIBiG compound",
+    "additionalProperties": false,
+    "properties": {
+        "activities": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "moieties": {
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "subcluster": {
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": ["name"]
+            },
+            "type": "array"
+        },
+        "structure": {
+            "type": "string"
+        },
+        "synonyms": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "targets": {
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "publications": {
+                        "items": {
+                            "$ref": "https://mibig.secondarymetabolites.org/schemas/db_xref.json"
+                        },
+                        "type": "array"
+                    }
+                }
+            },
+            "type": "array"
+        },
+        "database_ids": {
+            "description": "Entries for this compound in compound databases",
+            "items": {
+                "$ref": "https://mibig.secondarymetabolites.org/schemas/db_xref.json"
+            },
+            "type": "array"
+        },
+        "name": {
+            "type": "string"
+        },
+        "evidences": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "mass_spec_ion_type": {
+            "type": "string"
+        },
+        "molecular_mass": {
+            "type": "number",
+            "minimum": 0
+        },
+        "molecular_formula": {
+            "type": "string"
+        }
+    },
+    "required": ["name"]
+}

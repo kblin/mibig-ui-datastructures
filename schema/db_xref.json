@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema_created": "2022-03-07T11:38:06+01:00",
+    "$schema_version": "1.0",
+    "$id": "https://mibig.secondarymetabolites.org/schemas/db_xref.json",
+    "title": "Database cross-reference",
+    "description": "A reference to a given identifier in another database",
+    "additionalProperties": false,
+    "properties": {
+        "database": {
+            "type": "string"
+        },
+        "identifier": {
+            "type": "string"
+        }
+    },
+    "required": ["database", "identifier"]
+}

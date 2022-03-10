@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema_created": "2022-03-07T11:11:15+01:00",
+    "$schema_version": "1.0",
+    "$id": "https://mibig.secondarymetabolites.org/schemas/basis_data.json",
+    "title": "Basic MIBiG entry information",
+    "description": "The basic set of information required for a minimal MIBiG entry",
+    "additionalProperties": false,
+    "properties": {
+        "accession": {
+            "type": "string"
+        },
+        "biosynthetic_classes": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "compounds": {
+            "items": {
+                "$ref": "https://mibig.secondarymetabolites.org/schemas/compound.json"
+            },
+            "type": "array"
+        },
+        "locus": {
+            "$ref": "https://mibig.secondarymetabolites.org/schemas/locus.json"
+        },
+        "organism_name": {
+            "type": "string"
+        },
+        "ncbi_taxid": {
+            "type": "integer"
+        },
+        "publications": {
+            "items": {
+                "type": "object",
+                "$ref": "https://mibig.secondarymetabolites.org/schemas/db_xref.json"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "accession",
+        "biosynthetic_classes",
+        "compounds",
+        "locus",
+        "ncbi_taxid",
+        "organism_name",
+        "publications"
+    ]
+}

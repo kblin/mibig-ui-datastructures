@@ -1,0 +1,5 @@
+{
+    "accession": {"database": "genbank", "identifier": "AM746336.1"},
+    "completeness": "complete",
+    "evidences": ["knock-out studies"]
+}

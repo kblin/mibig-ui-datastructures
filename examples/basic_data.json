@@ -1,0 +1,58 @@
+{
+    "accession": "BGC0001070",
+    "biosynthetic_classes": [
+        "NRP",
+        "Polyketide"
+    ],
+    "compounds": [
+        {
+            "activities": [
+                "antibacterial"
+            ],
+            "structure": "CC[C@H](C(=O)NC/C=C/C=C(\\C)/[C@H]([C@@H](C)[C@H]1[C@H]([C@H]([C@H](O1)/C=C/C=C/C=C(\\C)/C(=C\\2/C(=O)C=CNC2=O)/O)O)O)OC)[C@@]3([C@@H]([C@@H](C([C@@H](O3)/C=C/C=C\\C)(C)C)O)O)O",
+            "synonyms": [
+                "mocimycin",
+                "delvomycin"
+            ],
+            "targets": [
+                {
+                    "name": "EG-Tu"
+                }
+            ],
+            "name": "kirromycin",
+            "database_ids": [
+                {
+                    "database": "pubchem",
+                    "identifier": "54697674"
+                },
+                {
+                    "database": "chemspider",
+                    "identifier": "4883396"
+                }
+            ],
+            "molecular_mass": 796.4146253600001,
+            "molecular_formula": "C43H60N2O12"
+        }
+    ],
+    "locus": {
+        "accession": {
+            "database": "genbank",
+            "identifier": "AM746336.1"
+        },
+        "completeness": "complete",
+        "evidences": [
+            "knock-out studies"
+        ]
+    },
+    "ncbi_taxid": 1214242,
+    "organism_name": "Streptomyces collinus Tu 365",
+    "publications": [
+        "pubmed:4554808",
+        "pubmed:4373734",
+        "pubmed:18291322",
+        "pubmed:21513880",
+        "pubmed:19609288",
+        "pubmed:21401713",
+        "pubmed:23828654"
+    ]
+}

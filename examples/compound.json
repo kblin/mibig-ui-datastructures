@@ -1,0 +1,13 @@
+{
+    "activities": ["antibacterial"],
+    "structure": "CC[C@H](C(=O)NC/C=C/C=C(\\C)/[C@H]([C@@H](C)[C@H]1[C@H]([C@H]([C@H](O1)/C=C/C=C/C=C(\\C)/C(=C\\2/C(=O)C=CNC2=O)/O)O)O)OC)[C@@]3([C@@H]([C@@H](C([C@@H](O3)/C=C/C=C\\C)(C)C)O)O)O",
+    "synonyms": ["mocimycin", "delvomycin"],
+    "targets": [{"name": "EG-Tu"}],
+    "name": "kirromycin",
+    "database_ids": [
+        {"database": "pubchem", "identifier": "54697674"},
+        {"database": "chemspider", "identifier": "4883396"}
+    ],
+    "molecular_mass": 796.4146253600001,
+    "molecular_formula": "C43H60N2O12"
+}
