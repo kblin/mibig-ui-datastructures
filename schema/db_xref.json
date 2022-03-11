@@ -5,6 +5,7 @@
     "$id": "https://mibig.secondarymetabolites.org/schemas/db_xref.json",
     "title": "Database cross-reference",
     "description": "A reference to a given identifier in another database",
+    "type": "object",
     "additionalProperties": false,
     "properties": {
         "database": {

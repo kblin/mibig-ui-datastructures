@@ -47,12 +47,33 @@
     "ncbi_taxid": 1214242,
     "organism_name": "Streptomyces collinus Tu 365",
     "publications": [
-        "pubmed:4554808",
-        "pubmed:4373734",
-        "pubmed:18291322",
-        "pubmed:21513880",
-        "pubmed:19609288",
-        "pubmed:21401713",
-        "pubmed:23828654"
+        {
+            "database": "pubmed",
+            "identifier": "4554808"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "4373734"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "18291322"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "21513880"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "19609288"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "21401713"
+        },
+        {
+            "database": "pubmed",
+            "identifier": "23828654"
+        }
     ]
 }

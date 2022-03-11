@@ -33,7 +33,6 @@
         },
         "publications": {
             "items": {
-                "type": "object",
                 "$ref": "https://mibig.secondarymetabolites.org/schemas/db_xref.json"
             },
             "type": "array"
