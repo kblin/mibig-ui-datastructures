@@ -4,6 +4,7 @@ import cors from 'cors';
 
 
 import available from './src/available/index.js';
+import stats from './src/stats.js';
 import validate from './src/validate/index.js';
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(body_parser.urlencoded({ extended: false }));
 app.use(body_parser.json());
 
 app.use('/api/v1/available', available);
+app.use('/api/v1/stats', stats);
 app.use('/api/v1/validate', validate);
 
 app.get('/api/v1/prefill/:acc', (req, res)=> {
