@@ -7,7 +7,7 @@ import available from './src/available/index.js';
 import validate from './src/validate/index.js';
 
 const app = express();
-const port = 3456;
+const port = 6424;
 
 app.use(cors());
 
