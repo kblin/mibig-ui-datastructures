@@ -25,7 +25,8 @@
                     "subcluster": {
                         "items": {
                             "type": "string"
-                        }
+                        },
+                        "type": "array"
                     }
                 },
                 "required": ["name"]
