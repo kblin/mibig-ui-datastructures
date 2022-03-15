@@ -14,10 +14,10 @@ app.use(cors());
 app.use(body_parser.urlencoded({ extended: false }));
 app.use(body_parser.json());
 
-app.use('/available', available);
-app.use('/validate', validate);
+app.use('/api/v1/available', available);
+app.use('/api/v1/validate', validate);
 
-app.get('/prefill/:acc', (req, res)=> {
+app.get('/api/v1/prefill/:acc', (req, res)=> {
     const acc = req.params.acc;
 
     let basic_data = {
