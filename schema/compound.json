@@ -70,7 +70,7 @@
         "name": {
             "type": "string"
         },
-        "evidences": {
+        "evidence": {
             "items": {
                 "type": "string"
             },

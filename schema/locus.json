@@ -22,7 +22,7 @@
         "end_coordinate": {
             "type": "integer"
         },
-        "evidences": {
+        "evidence": {
             "items": {                
                 "description": "validated on the server side",
                 "type": "string"
@@ -36,5 +36,5 @@
             "type": "integer"
         }
     },
-    "required": ["accession", "completeness", "evidences"]
+    "required": ["accession", "completeness", "evidence"]
 }
