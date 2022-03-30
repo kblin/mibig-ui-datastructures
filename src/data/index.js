@@ -70,4 +70,13 @@ export const publications = {
     ],
 }
 
-export default { biosynthetic_classes: biosynthetic_classes, compound: compound, locus: locus, publications: publications };
+export const status = {
+    status: [
+        'assigned',
+        'waiting',
+        'changes',
+        'complete',
+    ]
+}
+
+export default { biosynthetic_classes: biosynthetic_classes, compound: compound, locus: locus, publications: publications, status: status };

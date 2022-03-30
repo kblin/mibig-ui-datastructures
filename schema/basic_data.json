@@ -36,6 +36,9 @@
                 "$ref": "https://mibig.secondarymetabolites.org/schemas/db_xref.json"
             },
             "type": "array"
+        },
+        "status": {
+            "type": "string"
         }
     },
     "required": [

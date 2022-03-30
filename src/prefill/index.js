@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { biosynthetic_classes, compound, locus, publications } from '../data/index.js';
+import { biosynthetic_classes, compound, locus, publications, status } from '../data/index.js';
 import { select_from, select_up_to_from, get_positive_value_below, random_string } from '../utils.js';
 
 const router = express.Router();
@@ -49,8 +49,9 @@ router.get('/new/:acc', (req, res) => {
                 database: select_from(publications.databases),
                 identifier: random_string(12),
             }
-        ]
-    }
+        ],
+        status: select_from(status.status),
+    };
 
     res.json(basic_data);
     return;
